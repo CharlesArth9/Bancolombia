@@ -19,7 +19,7 @@ public class DiligenciarFormulario implements Task {
     }
 
     public static DiligenciarFormulario conLaInformacion(List<Datos> datos){
-        return Tasks.instrumented(DiligenciarFormulario.class);
+        return Tasks.instrumented(DiligenciarFormulario.class,datos);
     }
 
     @Override
